@@ -60,4 +60,21 @@
 ![lb-web2](/images/webserver2-loadref.PNG)
 
 
+### The next couple of steps are to configure local DNS names. i.e. renaming our two webservers IP address to a resolved name chosen. To achieve this, the `/etc/hosts` file needs to be updated and also the load Balance config file.
+
+![dns-name](/images/dns-name.PNG)
+
+![ipname](/images/lbconfig-ipname.PNG)
+
+### Finally, to test the above steps, the webservers were both tested from the LB server.
+`curl http://WebServer1`
+
+![curlweb1](/images/curl-webserver1.PNG)
+
+
+`curl http://WebServer2`
+
+![curlweb2](/images/curl-webserver2.PNG)
+
+
 
